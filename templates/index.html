@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>
+        Upload the image to improve the quality of image
+    </h1>
+        <form method="post" enctype="multipart/form-data" action="predict">
+    
+            {% csrf_token %}
+            <div class="col-md-4 col-sm-4"><label for="fname">Upload Image File Here:</label> </div> <input name="file_img" type="file"><br><br>
+            <br>
+        
+            
+            <input type="submit" value="Submit" ></div>
+
+      </form>
+</body>
+</html>
